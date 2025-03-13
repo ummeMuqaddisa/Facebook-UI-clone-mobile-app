@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,6 +27,7 @@ class homepage extends StatelessWidget {
         child: Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        toolbarHeight: 50,
         backgroundColor: Colors.white ,
         title: Text("facebook",style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,color: Colors.blue[700]),),
         actions: [
@@ -94,6 +96,7 @@ class homepage extends StatelessWidget {
                               ),
 
 
+
                             ),
 
                           ),
@@ -102,11 +105,28 @@ class homepage extends StatelessWidget {
                             child: 
                             Icon(Icons.photo_rounded,color: Colors.green[600]),
 
-
                           )
 
                         ],)
-                    )
+                    ),
+                    Container(
+                      color: Colors.grey[350],
+                      height: 4,
+                    ),
+
+                    Container(
+                      color: Colors.white,
+                      height: 220,
+                      child: Row(children: [
+
+
+                      ],),
+                    ),
+                    Container(
+                      color: Colors.grey[350],
+                      height: 4,
+                    ),
+
                   ],
                 ),
 
@@ -118,6 +138,7 @@ class homepage extends StatelessWidget {
               Container(color: Colors.white),
 
             ])
+
 
     ));
 
