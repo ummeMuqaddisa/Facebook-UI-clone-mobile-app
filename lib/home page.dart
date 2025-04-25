@@ -176,6 +176,30 @@ class homepage extends StatelessWidget {
                       height: 4,
                     ),
 
+                    Container(
+                      height: 400,
+                      width: double.infinity,
+                      //color: Colors.green,
+                      child:
+                        Column(
+                          children: [
+                            Container(
+                              height: 400,
+                              width: double.infinity,
+                            decoration: BoxDecoration(
+                            image: DecorationImage(fit: BoxFit.cover,image: NetworkImage( "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRXxfn1j1vKFy8yJeBGl2AS6Dcah-lKgHofg&s",),)),
+                            )
+                          ],
+                        )
+
+
+                    ),
+
+                    Container(
+                      color: Colors.grey[350],
+                      height: 4,
+                    ),
+
                   ],
                 ),
 
