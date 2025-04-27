@@ -48,6 +48,8 @@ class homepage extends StatelessWidget {
       ),
 
           body:
+
+
             TabBarView(children: [
               Container(color: Colors.white,
                 child: Column(
@@ -123,12 +125,12 @@ class homepage extends StatelessWidget {
                                   height: 60, width: double.infinity,
                                   decoration: BoxDecoration(
                                       borderRadius: BorderRadius.only(topLeft:Radius.circular(15),topRight: Radius.circular(15) ),
-                                      
+
                                 ),
                                   child:
 
                                   Center(child: Text("Create \n stroy")),
-                                    
+
                                 )
                               ],
                             ),
@@ -179,12 +181,53 @@ class homepage extends StatelessWidget {
                     Container(
                       height: 400,
                       width: double.infinity,
+                      child:
+                      SingleChildScrollView(
+                          scrollDirection: Axis.vertical,
+
+
                       //color: Colors.green,
                       child:
                         Column(
                           children: [
                             Container(
-                              height: 400,
+                              height: 60,
+                              width: double.infinity,
+                              //decoration: BoxDecoration(
+                          child:
+                          Row(
+
+                            children: [
+                           Container(
+                           width:8,),
+
+                          CircleAvatar(
+                            backgroundImage: NetworkImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRXxfn1j1vKFy8yJeBGl2AS6Dcah-lKgHofg&s"),
+                            child: Icon(Icons.person),
+                            radius:25,
+                          ),
+
+                          //Container(width: 12,),
+                        Container(
+                            margin: EdgeInsets.only(top: 10,bottom: 10,left: 10),
+                            width: 120,
+                            child:
+                            Text("Sanrio",style: TextStyle(fontSize: 15,),),
+                        ),
+
+                        ]
+
+
+                            )
+
+                    ),
+                            Container(
+                              height: 20,
+                              width: double.infinity,
+                            ),
+
+                            Container(
+                              height: 320,
                               width: double.infinity,
                             decoration: BoxDecoration(
                             image: DecorationImage(fit: BoxFit.cover,image: NetworkImage( "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRXxfn1j1vKFy8yJeBGl2AS6Dcah-lKgHofg&s",),)),
@@ -192,7 +235,7 @@ class homepage extends StatelessWidget {
                           ],
                         )
 
-
+                      )
                     ),
 
                     Container(
@@ -210,7 +253,9 @@ class homepage extends StatelessWidget {
               Container(color: Colors.white),
               Container(color: Colors.white),
 
-            ])
+            ]
+            )
+
 
 
 
